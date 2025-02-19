@@ -3,7 +3,7 @@ import ConsultationForm from "./contactus";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-16 bg-gray-100 border rounded-md">
+    <section data-aos="fade-up" id="contact" className="py-16 bg-gray-100 border rounded-md">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-8 text-center text-black">Contact Us</h2>
         <p className="text-center font-semibold mb-2">Book a consultation or visit us today!</p>

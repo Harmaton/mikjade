@@ -3,7 +3,7 @@ import { Building2, Shield, Trophy } from "lucide-react"
 
 export default function AboutUs() {
   return (
-    <section className="py-12 md:py-24 px-4 md:px-8 bg-secondary/50">
+    <section data-aos="fade-up" className="py-12 md:py-24 px-4 md:px-8 bg-secondary/50">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
           <div className="w-full md:w-1/2 relative aspect-[4/3] overflow-hidden rounded-3xl">

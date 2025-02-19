@@ -52,7 +52,7 @@ function ImageSlider({ images }: { images: string[] }) {
   }, [images])
 
   return (
-    <div className="relative group aspect-[4/3]">
+    <div data-aos="fade-up" className="relative group aspect-[4/3]">
       {/* Current Image */}
       <div className="relative h-full w-full">
         <Image

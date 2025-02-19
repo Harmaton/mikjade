@@ -25,7 +25,7 @@ export default function Services() {
         },
       ];
   return (
-    <section id='services' className="py-10 px-4 md:px-8">
+    <section id='services' data-aos="fade-up" className="py-10 px-4 md:px-8">
     <div className="max-w-7xl mx-auto">
       <div className="text-center space-y-4 mb-2">
         <h2 className="font-playfair text-4xl font-semibold mb-4">Our Services</h2>

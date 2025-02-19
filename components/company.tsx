@@ -12,7 +12,7 @@ export default function Company() {
   ];
   
   return (
-    <section className="py-14 px-4 md:px-8 mx-auto border rounded-md  bg-gray-50">
+    <section data-aos="fade-up" className="py-14 px-4 md:px-8 mx-auto border rounded-md  bg-gray-50">
     <div className="max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>

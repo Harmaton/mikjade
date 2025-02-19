@@ -3,30 +3,50 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-
 const categories = [
   {
     id: 1,
-    title: "Kitchen Makeovers",
-    description: "Clean lines and uncluttered spaces define these contemporary interiors",
+    title: "Kitchen Designs",
+    description: "Elegant and functional kitchen spaces tailored for modern living.",
     images: [
       "/kitchen1.jpg",
+      "/door.jpg",
       "/kitchen2.jpg",
-      "/kitchen4.jpg",
+      "/door1.jpg",
     ],
   },
   {
     id: 2,
-    title: "Cabinetry",
-    description: "Light, airy spaces with natural materials and minimal decoration",
+    title: "Custom Cabinetry",
+    description: "Beautifully crafted cabinets designed for efficiency and aesthetics.",
     images: [
       "/cabinet1.jpg",
       "/cabinet2.jpg",
-      "/kitchen4.jpg",
+      "/cabinet3.jpg",
     ],
   },
-  // Add more categories as needed
-]
+  {
+    id: 3,
+    title: "Wardrobes & Vanities",
+    description: "Stylish storage solutions with a perfect balance of function and beauty.",
+    images: [
+      "/wardrobe1.jpg",
+      "/wardrobe2.jpg",
+      "/wardrobe3.jpg",
+    ],
+  },
+  {
+    id: 4,
+    title: "Flooring & Stairs",
+    description: "Durable and elegant flooring options paired with stunning stair designs.",
+    images: [
+      "/floor5.jpg",
+      "/floor4.jpg",
+      "/floor3.jpg",
+    ],
+  },
+];
+
 
 function ImageSlider({ images }: { images: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -103,7 +123,7 @@ export default function Projects() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-6">
-            <span className="text-[#0066FF] text-sm font-medium">Interior Design Portfolio</span>
+            <span className="text-[#0066FF] text-sm font-medium">Our Curated Portfolio</span>
           </div>
           <h1 className="text-[#1A1A1A] text-4xl md:text-5xl font-bold mb-4">Discover Our Design Categories</h1>
           <p className="text-[#666666] text-lg max-w-3xl mx-auto">

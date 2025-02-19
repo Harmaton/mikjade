@@ -16,7 +16,9 @@ export default function AboutUs() {
             />
           </div>
           <div className="w-full md:w-1/2 space-y-6">
-            <h2 className="font-playfair text-4xl font-semibold">About Us</h2>
+          <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-2 mt-2">
+            <span className="text-[#0066FF] text-sm font-medium">About Us</span>
+          </div>
             <p className="text-muted-foreground">
               With over 10 years of experience, Mikjade Ventures Limited has built a strong reputation for excellence in
               interior design and home solutions. Our portfolio includes clients from across the country and beyond,

@@ -5,8 +5,19 @@ export default function ContactSection() {
   return (
     <section data-aos="fade-up" id="contact" className="py-16 bg-gray-100 border rounded-md">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8 text-center text-black">Contact Us</h2>
-        <p className="text-center font-semibold mb-2">Book a consultation or visit us today!</p>
+      <div className="text-center mb-16">
+  <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-6">
+    <span className="text-[#0066FF] text-sm font-medium">Contact Us</span>
+  </div>
+  <h1 className="text-[#1A1A1A] text-4xl md:text-5xl font-bold mb-4">
+    Get in Touch with Us
+  </h1>
+  <p className="text-[#666666] text-lg max-w-3xl mx-auto">
+    Have questions or need assistance with your interior design or cabinetry project? 
+   Reach out to us and let's bring your vision to life.
+  </p>
+</div>
+
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <ConsultationForm />

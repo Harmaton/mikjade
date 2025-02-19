@@ -66,8 +66,20 @@ export default function Testimonials() {
 
   return (
     <section className="py-12 bg-gray-50">
+      
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">What They Say About Us</h2>
+        
+         {/* Header Section */}
+         <div className="text-center mb-16">
+          <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-6">
+            <span className="text-[#0066FF] text-sm font-medium">Testimonials</span>
+          </div>
+          <h1 className="text-[#1A1A1A] text-4xl md:text-5xl font-bold mb-4">What Our Clients Say</h1>
+          <p className="text-[#666666] text-lg max-w-3xl mx-auto">
+            Dont take our word for it, Hear from our satisfied clients who have experienced our services.
+          </p>
+        </div>
+
         <Slider {...settings} className="testimonial-slider">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} {...testimonial} />

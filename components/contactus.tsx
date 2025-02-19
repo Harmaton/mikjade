@@ -70,52 +70,70 @@ Extra Requirements: ${requirements}
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      <div>
-        <Label htmlFor="name">Name</Label>
-        <Input
-          id="name"
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Enter your name or company name"
-          required
-        />
-      </div>
-      <div>
-        <Label htmlFor="phone">Phone Number</Label>
-        <PhoneInput
-          id="phone"
-          value={phoneNumber}
-          onChange={(value) => setPhoneNumber(value || "")}
-          defaultCountry="KE"
-          placeholder="Enter phone number"
-          required
-        />
-      </div>
+    <div className="space-y-4">
+  <div className="flex flex-col">
+    <Label htmlFor="name" className="text-sm font-medium text-gray-700">
+      Name
+    </Label>
+    <Input
+      id="name"
+      type="text"
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+      placeholder="Enter your name or company name"
+      required
+      className="mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+    />
+  </div>
+
+  <div className="flex flex-col">
+    <Label htmlFor="phone" className="text-sm font-medium text-gray-700">
+      Phone Number
+    </Label>
+    <PhoneInput
+      id="phone"
+      value={phoneNumber}
+      onChange={(value) => setPhoneNumber(value || "")}
+      defaultCountry="KE"
+      placeholder="Enter phone number"
+      required
+      className="mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+    />
+  </div>
+</div>
+
       <div className="grid grid-cols-2 gap-4">
-        <div>
-          <Label htmlFor="date">Preferred Date</Label>
-          <Input
-            id="date"
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <Label htmlFor="time">Preferred Time</Label>
-          <Input
-            id="time"
-            type="time"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            required
-          />
-        </div>
-      </div>
+  <div className="flex flex-col space-y-2">
+    <Label htmlFor="date" className="text-md font-medium text-gray-700">
+      Preferred Date
+    </Label>
+    <Input
+      id="date"
+      type="date"
+      value={date}
+      onChange={(e) => setDate(e.target.value)}
+      required
+      className="border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+    />
+  </div>
+  <div className="flex flex-col space-y-2">
+    <Label htmlFor="time" className="text-md font-medium text-gray-700">
+      Preferred Time
+    </Label>
+    <Input
+      id="time"
+      type="time"
+      value={time}
+      onChange={(e) => setTime(e.target.value)}
+      required
+      className="border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+    />
+  </div>
+</div>
+
       <div>
-        <Label>Services Interested In</Label>
+      <Label className="text-lg font-medium text-gray-700">Services Interested In</Label>
+
         <div className="grid grid-cols-2 gap-2 mt-2">
           {services.map((service) => (
             <div key={service.id} className="flex items-center space-x-2">
@@ -139,6 +157,7 @@ Extra Requirements: ${requirements}
         <Textarea
           id="requirements"
           value={requirements}
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           onChange={(e) => setRequirements(e.target.value)}
           placeholder="Any additional information or requirements for the consultation"
         />

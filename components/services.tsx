@@ -28,10 +28,18 @@ export default function Services() {
     <section id='services' data-aos="fade-up" className="py-10 px-4 md:px-8">
     <div className="max-w-7xl mx-auto">
       <div className="text-center space-y-4 mb-2">
-        <h2 className="font-playfair text-4xl font-semibold mb-4">Our Services</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          Comprehensive interior solutions tailored to your needs
-        </p>
+      <div className="text-center mb-16">
+  <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-6">
+    <span className="text-[#0066FF] text-sm font-medium">Our Services</span>
+  </div>
+  <h1 className="text-[#1A1A1A] text-4xl md:text-5xl font-bold mb-4">
+    Expert Interior Design & Craftsmanship
+  </h1>
+  <p className="text-[#666666] text-lg max-w-3xl mx-auto">
+    High-quality interior design, custom cabinetry, and space planning tailored to your style.
+  </p>
+</div>
+
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -39,7 +47,7 @@ export default function Services() {
           <div
             key={service.id} 
           >
-            <Card className="p-6 h-full">
+            <Card className="p-6 h-full" data-aos="fade-up">
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-primary/5 rounded-full">
                   {service.icon}

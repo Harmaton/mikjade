@@ -19,7 +19,7 @@ export default function Company() {
 
           <div className="space-y-4">
           <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-2 mt-2">
-            <span className="text-[#0066FF] text-sm font-medium">Vision</span>
+            <span className="text-[#0066FF] text-sm font-medium">Our Vision</span>
           </div>
             <p className="text-muted-foreground">
               To be outstanding, unique and leading one-stop for all cabinetry and services in Africa and beyond.
@@ -29,7 +29,7 @@ export default function Company() {
 
           <div className="space-y-4 ">
           <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-2 mt-2">
-            <span className="text-[#0066FF] text-sm font-medium">Mission</span>
+            <span className="text-[#0066FF] text-sm font-medium"> Our Mission</span>
           </div>
             <p className="text-muted-foreground">
               Our focus and principles are creativity leveraging on advanced technology in our day-to-day operations 
@@ -39,7 +39,7 @@ export default function Company() {
         </div>
         <div>
         <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-4 mt-2">
-            <span className="text-[#0066FF] text-sm font-medium">Mission</span>
+            <span className="text-[#0066FF] text-sm font-medium">Our Values</span>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {values.map((value, index) => (

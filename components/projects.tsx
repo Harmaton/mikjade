@@ -69,7 +69,7 @@ function ImageSlider({ images }: { images: string[] }) {
       nextSlide()
     }, 3000)
     return () => clearInterval(interval)
-  }, [images])
+  }, [images, currentIndex])
 
   return (
     <div data-aos="fade-up" className="relative group aspect-[4/3]">

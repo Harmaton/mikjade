@@ -27,7 +27,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
           <div className="space-y-4 p-6 border border-blue-500 text-blue-500  bg-background rounded-xl shadow-md">
             <Trophy className="h-12 w-12  mx-auto" />
             <h3 className="font-medium text-xl">10+ Years Experience</h3>

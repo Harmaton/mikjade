@@ -1,5 +1,6 @@
 import { Mail, Phone } from "lucide-react";
 import ConsultationForm from "./contactus";
+import Link from "next/link";
 
 export default function ContactSection() {
   return (
@@ -14,7 +15,7 @@ export default function ContactSection() {
   </h1>
   <p className="text-[#666666] text-lg max-w-3xl mx-auto">
     Have questions or need assistance with your interior design or cabinetry project? 
-   Reach out to us and let's bring your vision to life.
+   Reach out to us and let&apos;s bring your vision to life.
   </p>
 </div>
 
@@ -33,15 +34,15 @@ export default function ContactSection() {
             </div>
             <div className="flex items-center space-x-2 justify-center">
               <Phone className="w-5 h-5 text-blue-900" />
-              <a href="tel:+254726629335" className="text-blue-900 hover:underline">
+              <p className="text-blue-900 hover:underline">
                 +254 726 629 335
-              </a>
+              </p>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <Mail className="w-5 h-5" />
-              <a href="mailto:contact@mikjadeventures.co.ke" className="text-blue-900 hover:underline">
+              <Link href="mailto:contact@mikjadeventures.co.ke" className="text-blue-900 hover:underline">
                 info@mikjadeventures.co.ke
-              </a>
+              </Link>
             </div>
           </div>
         </div>

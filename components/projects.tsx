@@ -6,15 +6,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const categories = [
   {
     id: 1,
-    title: "Kitchen Designs",
+    title: "Kitchen Works",
     description: "Elegant and functional kitchen spaces tailored for modern living.",
     images: [
       "/kitchen1.jpg",
-      "/door.jpg",
       "/kitchen2.jpg",
-      "/door1.jpg",
-      '/gypsum2.jpg',
-      '/gypsum3.jpg'
+      '/kit.jpg',
+      '/kit0.jpg'
+    
     ],
   },
   {
@@ -37,18 +36,43 @@ const categories = [
       "/wardrobe1.jpg",
       "/wardrobe2.jpg",
       "/wardrobe3.jpg",
-      '/cab4.jpg'
+      '/cab4.jpg',
+      '/ward.jpg'
     ],
   },
   {
     id: 4,
-    title: "Flooring & Stairs",
-    description: "Durable and elegant flooring options paired with stunning stair designs.",
+    title: "Solid Works",
+    description: "Innovative and durable flooring solutions seamlessly combined with sophisticated stair designs, delivering both strength and elegance for any space.",
     images: [
       "/floor5.jpg",
       "/floor4.jpg",
       "/floor3.jpg",
       '/flo.jpg'
+    ],
+  },
+  {
+    id: 5,
+    title: "Gypsum Installations",
+    description: "Precision-crafted gypsum installations offering durable and elegant finishes for walls, ceilings, and custom designs.",
+    images: [
+      '/gypsum2.jpg',
+      '/gypsum3.jpg',
+      '/g1.jpg',
+      '/g2.jpg',
+      '/g3.jpg',
+      '/g4.jpg',
+      '/g5.jpg'
+    ],
+  },
+  {
+    id: 6,
+    title: "Doors",
+    description: "High-quality door installations combining durability, elegance, and seamless design for every space.",
+    images: [
+      "/mdoor.jpg",
+      "/door1.jpg",
+      "/door.jpg"
     ],
   },
 ];
@@ -148,9 +172,9 @@ export default function Projects() {
               <ImageSlider images={category.images} />
               <div className="p-6">
                 <div className="inline-block px-3 py-1 rounded-full bg-[#E6F0FF] mb-4">
-                  <span className="text-[#0066FF] text-sm font-medium">Interior Design Gallery</span>
+                  <span className="text-[#0066FF] text-sm font-medium">{category.title}</span>
                 </div>
-                <h2 className="text-[#1A1A1A] text-2xl font-bold mb-2">{category.title}</h2>
+                {/* <h2 className="text-[#1A1A1A] text-2xl font-bold mb-2"></h2> */}
                 <p className="text-[#666666]">{category.description}</p>
               </div>
             </div>

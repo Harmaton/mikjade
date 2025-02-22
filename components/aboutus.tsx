@@ -17,7 +17,7 @@ export default function AboutUs() {
           </div>
           <div className="w-full md:w-1/2 space-y-6">
           <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-2 mt-2">
-            <span className="text-[#0066FF] text-sm font-medium">About Us</span>
+            <span className="text-[#0066FF] text-sm font-medium">Our Story</span>
           </div>
             <p className="text-muted-foreground">
               With over 10 years of experience, Mikjade Ventures Limited has built a strong reputation for excellence in
@@ -32,11 +32,11 @@ export default function AboutUs() {
             <Trophy className="h-12 w-12  mx-auto" />
             <h3 className="font-medium text-xl">10+ Years Experience</h3>
           </div>
-          <div className="space-y-4 p-6 bg-background border-blue-500 text-blue-500  rounded-xl shadow-md">
+          <div className="space-y-4 p-6 bg-background border border-blue-500 text-blue-500  rounded-xl shadow-md">
             <Building2 className="h-12 w-12 mx-auto" />
             <h3 className="font-medium text-xl">Nationwide Service</h3>
           </div>
-          <div className="space-y-4 p-6 bg-background border-blue-500 text-blue-500  rounded-xl shadow-md">
+          <div className="space-y-4 p-6 bg-background border border-blue-500 text-blue-500  rounded-xl shadow-md">
             <Shield className="h-12 w-12 mx-auto" />
             <h3 className="font-medium text-xl">Professional Team</h3>
           </div>

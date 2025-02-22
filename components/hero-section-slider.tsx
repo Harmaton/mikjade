@@ -6,11 +6,17 @@ import Link from "next/link";
 
 export function ImagesSliderHero() {
   const images = [
-    'cabinet1.jpg',
-    'cabinet2.jpg',
-    'cabinet3.jpg',
-    'cabinet4.jpg',
-    'cabinet6.jpg',
+    '/cabinet1.jpg',
+    '/mdoor.jpg',
+    '/wad.jpg',
+    '/cabinet2.jpg',
+    '/cabinet3.jpg',
+    '/cabinet4.jpg',
+    '/cabinet6.jpg',
+    '/imageg.jpg',
+    '/gypsum.jpg',
+    '/door.jpg',
+    '/fl1.jpg'
   ];
   return (
     <ImagesSlider className="h-[35rem]" images={images}>

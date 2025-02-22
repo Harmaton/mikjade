@@ -13,6 +13,8 @@ const categories = [
       "/door.jpg",
       "/kitchen2.jpg",
       "/door1.jpg",
+      '/gypsum2.jpg',
+      '/gypsum3.jpg'
     ],
   },
   {
@@ -23,6 +25,8 @@ const categories = [
       "/cabinet1.jpg",
       "/cabinet2.jpg",
       "/cabinet3.jpg",
+      '/cab.jpg',
+      '/cab2.jpg'
     ],
   },
   {
@@ -33,6 +37,7 @@ const categories = [
       "/wardrobe1.jpg",
       "/wardrobe2.jpg",
       "/wardrobe3.jpg",
+      '/cab4.jpg'
     ],
   },
   {
@@ -43,6 +48,7 @@ const categories = [
       "/floor5.jpg",
       "/floor4.jpg",
       "/floor3.jpg",
+      '/flo.jpg'
     ],
   },
 ];
@@ -142,7 +148,7 @@ export default function Projects() {
               <ImageSlider images={category.images} />
               <div className="p-6">
                 <div className="inline-block px-3 py-1 rounded-full bg-[#E6F0FF] mb-4">
-                  <span className="text-[#0066FF] text-sm font-medium">Interior Design</span>
+                  <span className="text-[#0066FF] text-sm font-medium">Interior Design Gallery</span>
                 </div>
                 <h2 className="text-[#1A1A1A] text-2xl font-bold mb-2">{category.title}</h2>
                 <p className="text-[#666666]">{category.description}</p>

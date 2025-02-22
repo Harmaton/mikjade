@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Building2, Shield, Trophy } from "lucide-react"
+import { CompareDemo } from "./compare"
 
 export default function AboutUs() {
   return (
@@ -7,13 +8,14 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
           <div className="w-full md:w-1/2 relative aspect-[4/3] overflow-hidden rounded-3xl">
-            <Image
+            {/* <Image
               src="/mkjlogo.png"
               alt="About Mikjade Ventures"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
-            />
+            /> */}
+            <CompareDemo />
           </div>
           <div className="w-full md:w-1/2 space-y-6">
           <div className="inline-block px-4 py-1 rounded-full bg-[#E6F0FF] mb-2 mt-2">

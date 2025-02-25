@@ -116,9 +116,10 @@ export const Compare = ({
   );
 
   const handleMouseDown = useCallback(
-    (e: React.MouseEvent) => handleStart(),
+    () => handleStart(),
     [handleStart]
   );
+  
   const handleMouseUp = useCallback(() => handleEnd(), [handleEnd]);
   const handleMouseMove = useCallback(
     (e: React.MouseEvent) => handleMove(e.clientX),
@@ -165,7 +166,6 @@ export const Compare = ({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       onTouchMove={handleTouchMove}
-      
     >
       <AnimatePresence initial={false}>
         <motion.div

@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import { Building2, Shield, Trophy } from "lucide-react"
 import { CompareDemo } from "./compare"
 

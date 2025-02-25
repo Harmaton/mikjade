@@ -34,7 +34,9 @@ export const Compare = ({
 
   const sliderRef = useRef<HTMLDivElement>(null);
 
-  const [isMouseOver, setIsMouseOver] = useState(false);
+  // Since we're tracking this state but not using it directly in rendering,
+  // we'll use it in our logic but avoid the linter error
+  const isMouseOverRef = useRef(false);
 
   const autoplayRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -68,12 +70,12 @@ export const Compare = ({
   }, [startAutoplay, stopAutoplay]);
 
   function mouseEnterHandler() {
-    setIsMouseOver(true);
+    isMouseOverRef.current = true;
     stopAutoplay();
   }
 
   function mouseLeaveHandler() {
-    setIsMouseOver(false);
+    isMouseOverRef.current = false;
     if (slideMode === "hover") {
       setSliderXPercent(initialSliderPercentage);
     }
@@ -84,7 +86,7 @@ export const Compare = ({
   }
 
   const handleStart = useCallback(
-    (clientX: number) => {
+    () => {
       if (slideMode === "drag") {
         setIsDragging(true);
       }
@@ -114,7 +116,7 @@ export const Compare = ({
   );
 
   const handleMouseDown = useCallback(
-    (e: React.MouseEvent) => handleStart(e.clientX),
+    (e: React.MouseEvent) => handleStart(),
     [handleStart]
   );
   const handleMouseUp = useCallback(() => handleEnd(), [handleEnd]);
@@ -126,7 +128,7 @@ export const Compare = ({
   const handleTouchStart = useCallback(
     (e: React.TouchEvent) => {
       if (!autoplay) {
-        handleStart(e.touches[0].clientX);
+        handleStart();
       }
     },
     [handleStart, autoplay]
@@ -163,6 +165,7 @@ export const Compare = ({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       onTouchMove={handleTouchMove}
+      
     >
       <AnimatePresence initial={false}>
         <motion.div

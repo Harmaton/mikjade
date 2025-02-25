@@ -49,15 +49,15 @@ export default function Footer() {
           <div className="flex flex-col space-y-4">
             <h3 className="text-lg font-semibold">Follow Us</h3>
             <div className="flex space-x-4">
-              <Link href="https://www.tiktok.com/@mikjade_ventures?_t=ZM-8u61XBTjamD&_r=1" aria-label="Instagram" className="hover:text-gray-300 transition-colors">
+              <Link href="https://www.instagram.com/mikjadeventure?igsh=MTlwcGc4N2FtNWw1cg==" aria-label="Instagram" className="hover:text-gray-300 transition-colors">
                 <Instagram className="w-6 h-6" />
               </Link>
               <Link href="https://www.tiktok.com/@mikjade_ventures?_t=ZM-8u61XBTjamD&_r=1" aria-label="TikTok" className="hover:text-gray-300 transition-colors">
                 <TikTokIcon />
               </Link>
-              <Link href="https://www.tiktok.com/@mikjade_ventures?_t=ZM-8u61XBTjamD&_r=1" aria-label="Twitter" className="hover:text-gray-300 transition-colors">
+              {/* <Link href="https://www.tiktok.com/@mikjade_ventures?_t=ZM-8u61XBTjamD&_r=1" aria-label="Twitter" className="hover:text-gray-300 transition-colors">
                 <Twitter className="w-6 h-6" />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

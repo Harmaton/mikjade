@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useCallback } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 const categories = [
@@ -81,17 +81,17 @@ const categories = [
 function ImageSlider({ images }: { images: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     )
-  }
+  }, [images.length])
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     )
-  }
+  }, [images.length])
 
   // Automatic slide advancement every 3 seconds
   useEffect(() => {
@@ -99,7 +99,7 @@ function ImageSlider({ images }: { images: string[] }) {
       nextSlide()
     }, 3000)
     return () => clearInterval(interval)
-  }, [images, currentIndex])
+  }, [nextSlide])
 
   return (
     <div data-aos="fade-up" className="relative group aspect-[4/3]">
@@ -184,4 +184,3 @@ export default function Projects() {
     </div>
   )
 }
-
